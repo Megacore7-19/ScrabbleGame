@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="main" style="display: flex; flex-direction: row;">
+    <div>
+      <div id="errors" style="width: 90%; display: flex; justify-content: center;"></div>
+      <div id="board"></div><br />
+      <div id="controls">
+        <div id="hand"></div><br />
+        <button id="rstBtn" onclick="reset()">Reset</button>
+        <button id="subBtn" onclick="submit()">Submit</button>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div id="debugs"
+        style="width: 90%; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      </div>
+      <button id="clrBtn" onclick="debugClear()">Clear Log</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

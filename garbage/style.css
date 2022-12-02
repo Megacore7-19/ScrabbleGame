@@ -1,0 +1,58 @@
+.box {
+  width: calc(1.5vw + 1.5vh);
+  height: calc(1.5vw + 1.5vh);
+  background: grey;
+  margin: 5px;
+  border-radius: calc(0.25vw + 0.25vh);
+  
+  display: flex;
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+}
+.tileText {
+  font-size: 0.95em;
+}
+.tileNum {
+  transform: translateY(0.4em);
+  font-size: 0.4em;
+}
+.handIcon {
+  width: 3em;
+  height: 3em;
+  margin: 0.25em;
+  background: lightgray;
+  border-radius: 0.25em;
+}
+.active {
+  background: red;
+}
+.selected {
+  background: lightblue;
+}
+#resetBtn {
+  box-sizing: content-box;
+  width: 3em;
+  height: 1.5em;
+  padding: 0.5em;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 1em;
+  border: 1px solid grey;
+  border-radius: 0.15em;
+}
+#subBtn {
+  box-sizing: content-box;
+  width: 3em;
+  height: 1.5em;
+  padding: 0.5em;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 1em;
+  background: lightsteelblue;
+  border: 1px solid grey;
+  border-radius: 0.15em;
+}

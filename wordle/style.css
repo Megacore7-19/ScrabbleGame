@@ -1,0 +1,78 @@
+:root {
+  --incorrect: lightcoral;
+  --correct: lightgreen;
+  --wrongspot: gold;
+  --active:lightsteelblue;
+
+  --unit: calc(0.5vh + 0.5vw)
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wordrow {
+  width: 90vw;
+  height: calc(3.5vh + 3.5vw);;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wordbox {
+  width: calc(3vh + 3vw);
+  height: calc(3vh + 3vw);
+  background: #a5a5a5;
+  margin: 0 5px 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.75s ease;
+}
+
+.active {
+  background: var(--active);
+}
+.correct {
+  background: var(--correct);
+}
+.incorrect {
+  background: var(--incorrect);
+}
+.wrongSpot {
+  background: var(--wrongspot);
+}
+
+.keyboardRow {
+  display: flex;
+}
+
+.key {
+  width: calc(2vh + 2vw);
+  height: calc(2vh + 2vw);
+  margin: calc(0.25vh + 0.25vw);
+  background: lightgray;
+  border: 1px solid lightgray;
+  padding: calc(0.25vh + 0.25vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.75s ease;
+}
+
+.bigKey {
+  width: calc(4.5vh + 4.5vw);
+  margin: calc(0.25vh + 0.25vw);
+}
+
+#row2 {
+  transform: translateX(calc(0.5vh + 0.5vw));
+}
+
+#row3 {
+  transform: translateX(calc(2vh + 2vw));
+}
